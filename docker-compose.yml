@@ -20,7 +20,7 @@ services:
 
   mysql:
     image: mariadb
-    container_name: mariadb
+    container_name: mysql
     restart: unless-stopped
     tty: true
     ports:
