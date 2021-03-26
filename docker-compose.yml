@@ -19,9 +19,8 @@ services:
       - laravel
 
   mysql:
-    platform: linux/x86_64
-    image: mysql:5.7.22
-    container_name: mysql
+    image: mariadb
+    container_name: mariadb
     restart: unless-stopped
     tty: true
     ports:
@@ -50,6 +49,3 @@ services:
       - "9000:9000"
     networks:
       - laravel
-
-
-
