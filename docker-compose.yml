@@ -5,7 +5,7 @@ networks:
 
 services:
   nginx:
-    image: library/nginx:stable-alpine
+    image: library/nginx:stable
     container_name: nginx
     ports:
       - "8088:80"
